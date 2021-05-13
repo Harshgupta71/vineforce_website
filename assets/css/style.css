@@ -1,5 +1,5 @@
 /**
-* Template Name: Anyar - v4.1.0
+* Template Name: Anyar - v4.2.0
 * Template URL: https://bootstrapmade.com/anyar-free-multipurpose-one-page-bootstrap-theme/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
