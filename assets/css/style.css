@@ -139,7 +139,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #topbar .contact-info a:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  color: #f6b024;
 }
 
 #topbar .contact-info i {
@@ -150,6 +151,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #topbar .contact-info .phone-icon {
   margin-left: 15px;
+ 
 }
 
 #topbar .cta {
@@ -168,6 +170,23 @@ h1, h2, h3, h4, h5, h6 {
 #topbar .cta a:hover {
   background: #f1a40a;
 }
+
+@media screen and (max-width: 768px) {
+  #topbar .s-icon{
+    flex: 0 0 37%;
+    }
+  #topbar .s-icon2{
+      flex: 0 0 40%;
+    }
+  #topbar .contact-info .phone-icon {
+        margin-left: 4px;
+    }
+}
+
+
+  
+
+ 
 
 /*--------------------------------------------------------------
 # Header
@@ -245,7 +264,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   padding: 0 3px;
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 1);
   white-space: nowrap;
   transition: 0.3s;
   position: relative;
@@ -366,6 +385,7 @@ h1, h2, h3, h4, h5, h6 {
   .navbar ul {
     display: none;
   }
+  
 }
 
 .navbar-mobile {
@@ -493,17 +513,33 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero h2 {
-  color: #fff;
+   
   margin-bottom: 30px;
-  font-size: 48px;
+  font-size: 50px;
   font-weight: 700;
+  max-width: 90rem;
+  display: block;
+  margin: 0;
+  padding: 10px;
+  color: #fff;
+  overflow: hidden;
+  opacity: 1;
+   
+   
 }
+#hero h2 span{
+  color:#f1a40a;
+}
+
+
+
+
 
 #hero p {
   width: 80%;
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 15px auto;
   color: #fff;
 }
 
@@ -542,6 +578,12 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
+@media (min-width: 769px) {
+  #hero h2 {
+    font-size: 50px !important;
+  }
+}
+
 @media (min-width: 1024px) {
   #hero p {
     width: 60%;
@@ -557,7 +599,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 100px 0;
   }
   #hero h2 {
-    font-size: 28px;
+    font-size: 36px;
   }
 }
 
@@ -596,7 +638,7 @@ section {
 # Icon Boxes
 --------------------------------------------------------------*/
 .icon-boxes {
-  padding-top: 0;
+  padding-top: 15px;
   position: relative;
   z-index: 100;
 }
@@ -610,6 +652,12 @@ section {
   transition: all 0.3s ease-in-out;
   border-radius: 10px;
 }
+
+.icon-boxes .icon-box:hover{
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
 
 .icon-boxes .icon {
   margin: 0 auto 20px auto;
@@ -720,7 +768,8 @@ section {
 
 @media (max-width: 992px) {
   .about {
-    padding: 60px 0;
+    /* padding: 60px 0; */
+    padding: 0;
   }
 }
 
@@ -1014,6 +1063,10 @@ section {
   border-radius: 6px;
   background: #fff;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+.services .icon-box:hover{
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 
 .services .icon-box i {
@@ -1363,7 +1416,10 @@ section {
   position: relative;
   overflow: hidden;
 }
-
+.pricing .box:hover{
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
 .pricing h3 {
   font-weight: 400;
   margin: -20px -20px 20px -20px;
@@ -1443,6 +1499,11 @@ section {
   background: #2b99f8;
 }
 
+/* .pricing h3:hover {
+  color: #fff;
+  background: #0880e8;
+} */
+
 .pricing .featured h3 {
   color: #fff;
   background: #0880e8;
@@ -1460,6 +1521,9 @@ section {
   background: #0880e8;
   color: #fff;
 }
+
+
+
 
 /*--------------------------------------------------------------
 # Frequently Asked Questions
@@ -1820,7 +1884,7 @@ section {
 }
 
 .blog .entry .entry-content .read-more a:hover {
-  background: #f7b93c;
+  background: #0880e8;
 }
 
 .blog .entry .entry-content h3 {
@@ -2146,7 +2210,7 @@ section {
 }
 
 .blog .sidebar .search-form form button:hover {
-  background: #f8c255;
+  background: #0880e8;
 }
 
 .blog .sidebar .categories ul {
@@ -2240,6 +2304,136 @@ section {
   font-size: 14px;
 }
 
+
+/* call button section */
+
+ 
+
+.call-btn {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    bottom: 0px;
+    background: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 0;
+    width: 110px;
+    height: 110px;
+    z-index: 1000;
+}
+
+.call-btn .tada {
+    background: #ff9002;
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+    animation-name: tada;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.call-btn .tada a:before {
+    font-family: 'boxicons'!important;
+    content: "\eb15";
+    font-size: 25px;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 7px;
+    position: absolute;
+    top: 49%;
+    margin-top: -16px;
+}
+
+
+@keyframes tada {
+    from {
+        transform: rotate(-20deg);
+    }
+    to {
+        transform: rotate(20deg);
+    }
+}
+
+.call-btn .pulse {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 144, 2, 0.39);
+    ;
+    border-radius: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -30px;
+    margin-left: -30px;
+    animation-name: pulse;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes pulse {
+    from {
+        width: 55px;
+        height: 55px;
+        margin-top: -27.5px;
+        margin-left: -27.5px;
+    }
+    to {
+        width: 60px;
+        height: 60px;
+        margin-top: -30px;
+        margin-left: -30px;
+    }
+}
+
+.call-btn .zoomIn {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #ff9002;
+    border-radius: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -40px;
+    animation-name: zoomIn;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+@keyframes zoomIn {
+    from {
+        width: 40px;
+        height: 40px;
+        margin-top: -20px;
+        margin-left: -20px;
+    }
+    to {
+        width: 80px;
+        height: 80px;
+        margin-top: -40px;
+        margin-left: -40px;
+    }
+}
+
+@media screen and (max-width: 549px) {
+    .call-btn {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -2274,7 +2468,7 @@ section {
 #footer .footer-newsletter form input[type="email"] {
   border: 0;
   padding: 4px;
-  width: calc(100% - 100px);
+  width: calc(100% - 21%);
 }
 
 #footer .footer-newsletter form input[type="submit"] {
@@ -2320,6 +2514,7 @@ section {
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
   color: #fff;
+  text-align: justify;
 }
 
 #footer .footer-top .social-links a {
@@ -2329,7 +2524,7 @@ section {
   color: #fff;
   line-height: 1;
   padding: 10px 0;
-  margin-right: 4px;
+  margin-right: 10px;
   border-radius: 50%;
   text-align: center;
   width: 36px;
@@ -2413,3 +2608,56 @@ section {
 #footer .credits a {
   color: #f6b024;
 }
+
+/* counter-box start */
+.counter-box {
+  display: block;
+  background: #f6f6f6;
+  padding: 40px 20px 37px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.counter-box p {
+  margin: 5px 0 0;
+  padding: 0;
+  color: #444;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.counter-box i {
+  font-size: 60px;
+  margin: 0 0 15px;
+  color: #444;
+}
+
+.counter {
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+  color: #444;
+  line-height: 28px;
+}
+
+.counter-box:hover {
+  background: #f6b024;
+}
+
+ 
+.counter-box:hover i, .counter-box:hover span, .counter-box:hover p {
+  color: #fff;
+}
+
+.four{margin-bottom: 30px;}
+
+
+/* counter-box end  */
+
+ /* thank you section  */
+
+ .thankyou{
+  background: #ecf6fe;
+  margin-top: 130px;
+  padding: 35px 0;
+ }
