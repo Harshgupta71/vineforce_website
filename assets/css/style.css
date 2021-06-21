@@ -629,6 +629,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+
+@media (min-width: 768px){
+  #Getintouch .contact-wrap {
+    padding: 2rem!important;
+}
+}
+
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -1352,7 +1360,7 @@ section {
 
 .team .member .pic {
   overflow: hidden;
-  width: 180px;
+  max-width: 180px;
   border-radius: 50%;
 }
 
@@ -2857,6 +2865,7 @@ list-style: none;
 }
 #Getintouch .contact-wrap {
   background: #fff;
+  padding: 2rem;
 }
 #Getintouch .mb-4, .my-4 {
   margin-bottom: 1.5rem !important;
@@ -2940,3 +2949,55 @@ list-style: none;
 .partners ul li a:hover{
   color: #f6b024 !important;
 }
+
+/* map  */
+
+#contact .location iframe {
+  height: 300px;
+  width: 100%;
+}
+
+.call-us{
+  background-color : #31B0D5;
+  color: white;
+  padding: 20px 5px;
+  border-radius: 4px;
+  border-color: #46b8da;
+  position: absolute;
+  right: -32px;
+  top: 56%;
+}
+
+.skype-us {
+   background-color: #f1a40a;
+    color: white;
+    padding: 20px 5px;
+    border-radius: 4px;
+    border-color: #46b8da;
+    position: absolute;
+    right: -32px;
+    top: 56%;
+}
+
+.call_us  {
+  position: fixed;
+  top: -50px;
+  right: 32px;
+  z-index: 999;
+  height: 100%;
+   
+}
+.skype-call{
+  position: fixed;
+  top: 50px;
+  right: 32px;
+  z-index: 999;
+  height: 100%;
+  
+}
+.enquiry a{font-size: 30px;}
+.enquiry a:hover{color: #fff;}
+
+ 
+
+ 
