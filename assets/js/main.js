@@ -326,3 +326,98 @@ $(document).ready(function(){
       autoPlay:true
   });
 });
+
+
+// read more/less testimonials
+
+$(document).ready(function() {
+  // Configure/customize these variables.
+  var showChar = 150;  // How many characters are shown by default
+  var ellipsestext = "...";
+  var moretext = "Read more...";
+  var lesstext = "Read less...";
+  
+
+  $('.more').each(function() {
+      var content = $(this).html();
+
+      if(content.length > showChar) {
+
+          var c = content.substr(0, showChar);
+          var h = content.substr(showChar, content.length - showChar);
+
+          var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+
+          $(this).html(html);
+      }
+
+  });
+
+  $(".morelink").click(function(){
+      if($(this).hasClass("less")) {
+          $(this).removeClass("less");
+          $(this).html(moretext);
+      } else {
+          $(this).addClass("less");
+          $(this).html(lesstext);
+      }
+      $(this).parent().prev().toggle();
+      $(this).prev().toggle();
+      return false;
+  });
+});
+
+// read more/less home card section 
+$(document).ready(function() {
+  // Configure/customize these variables.
+  var showChar = 80;  // How many characters are shown by default
+  var ellipsestext = "...";
+  var moretext = "Read more...";
+  var lesstext = "Read less...";
+  
+
+  $('.more2').each(function() {
+      var content = $(this).html();
+
+      if(content.length > showChar) {
+
+          var c = content.substr(0, showChar);
+          var h = content.substr(showChar, content.length - showChar);
+
+          var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent2"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink2">' + moretext + '</a></span>';
+
+          $(this).html(html);
+      }
+
+  });
+
+  $(".morelink2").click(function(){
+      if($(this).hasClass("less")) {
+          $(this).removeClass("less");
+          $(this).html(moretext);
+      } else {
+          $(this).addClass("less");
+          $(this).html(lesstext);
+      }
+      $(this).parent().prev().toggle();
+      $(this).prev().toggle();
+      return false;
+  });
+});
+
+// progress bar 
+
+$(document).ready(function(){
+  $(".progress-bar.bg-success").animate({
+    width: "100%"
+    }, 2000 );
+    $(".progress-bar.bg-info").animate({
+    width: "90%"
+    }, 2000 );
+    $(".progress-bar.bg-warning").animate({
+    width: "85%"
+    }, 2000 );
+    $(".progress-bar.bg-danger").animate({
+    width: "80%"
+    }, 2000 );
+ });
