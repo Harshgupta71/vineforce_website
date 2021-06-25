@@ -375,6 +375,7 @@ $(document).ready(function() {
   var moretext = "Read more...";
   var lesstext = "Read less...";
   
+  
 
   $('.more2').each(function() {
       var content = $(this).html();
@@ -409,15 +410,15 @@ $(document).ready(function() {
 
 $(document).ready(function(){
   $(".progress-bar.bg-success").animate({
-    width: "100%"
+    width: "99%"
     }, 2000 );
     $(".progress-bar.bg-info").animate({
-    width: "90%"
+    width: "96%"
     }, 2000 );
     $(".progress-bar.bg-warning").animate({
-    width: "85%"
+    width: "97%"
     }, 2000 );
     $(".progress-bar.bg-danger").animate({
-    width: "80%"
+    width: "98%"
     }, 2000 );
  });
