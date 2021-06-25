@@ -193,6 +193,28 @@ h1, h2, h3, h4, h5, h6 {
   background: #f1a40a;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 768px) and (min-width: 501px)
 {
   #topbar .s-icon{
@@ -709,7 +731,7 @@ section {
 .icon-boxes .title {
   font-weight: 700;
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size:16px;
 }
 
 .icon-boxes .title a {
@@ -717,11 +739,21 @@ section {
 }
 
 .icon-boxes .description {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 28px;
   margin-bottom: 0;
   color: #777777;
+  
 }
+#collapse{
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 0;
+  color: #777777;
+   
+}
+
+
 
 /*--------------------------------------------------------------
 # About Us
@@ -3019,22 +3051,35 @@ list-style: none;
  /* Testimonials  */
 
  .testimonial{ margin: 0 20px 50px; }
+
+ .profile_desc {
+  display: flex;
+}
+.pic {
+  flex: 1;
+}
+.testimonial-profile {
+  flex: 0 0 75%;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .testimonial .pic{
-    display: inline-block;
-    width: 90px;
-    height: 90px;
+    display: inherit;
     border-radius: 50%;
-    margin: 0 15px 15px 0;
+     
 }
 .testimonial .pic img{
     width: 100%;
     height: auto;
     border-radius: 50%;
+    padding: 10px 5px;
 }
 .testimonial .testimonial-profile{
-    display: inline-block;
-    position: relative;
-    top: 15px;
+    display: inherit;
+    flex: 0 0 75%;
+    flex-direction: column;
+    justify-content: center;
 }
 .testimonial .title{
   font-weight: 700;
@@ -3163,3 +3208,76 @@ list-style: none;
     margin: 15px 0;
 }
 /* privacy and policy end */
+ 
+
+.morecontent span {
+  display: none;
+}
+.morelink {
+  display: block;
+  color: #fff;
+  font-weight: bold;
+}
+.morelink:hover {
+  color: #f1a40a;
+   
+}
+
+.morecontent2 span {
+  display: none;
+}
+.morelink2 {
+  display: block;
+  color: #2b99f8;
+  font-weight: 600;
+  
+}
+.morelink2:hover {
+  color: #f1a40a;
+   
+}
+
+
+/* progress bar  */
+.skills .progress {
+  height: 35px;
+  margin-bottom: 10px;
+}
+.skills .progress-bar {
+  width: 1px;
+  text-align: left;
+  transition: none ;
+}
+.skills .progress .skill {
+  line-height: 35px;
+  padding: 0;
+  margin: 0 0 0 20px;
+  text-transform: uppercase;
+}
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+  margin: 0 20px 0 0;
+}
+ 
+
+
+.about h3 {
+  font-weight: 400;
+  font-size: 26px;
+}
+.about ul {
+  list-style: none;
+  padding: 0;
+}
+.about ul li {
+  padding-bottom: 10px;
+}
+.about ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #68A4C4;
+}
+.about p:last-child {
+  margin-bottom: 0;
+}
