@@ -308,7 +308,7 @@ $(document).ready(function() {
         pagination:false,
         navigation:true,
         navigationText:["",""],
-        autoPlay:true
+        autoPlay:false
     });
 });
 
@@ -332,13 +332,13 @@ $(document).ready(function(){
 
 $(document).ready(function() {
   // Configure/customize these variables.
-  var showChar = 150;  // How many characters are shown by default
+  var showChar = 100;  // How many characters are shown by default
   var ellipsestext = "...";
   var moretext = "Read more...";
   var lesstext = "Read less...";
   
 
-  $('.more').each(function() {
+  $('.more p').each(function() {
       var content = $(this).html();
 
       if(content.length > showChar) {
@@ -352,6 +352,22 @@ $(document).ready(function() {
       }
 
   });
+
+  $('.text2').each(function() {
+    var content = $(this).html();
+
+    if(content.length > showChar) {
+
+        var c = content.substr(0, showChar);
+        var h = content.substr(showChar, content.length - showChar);
+
+        var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+
+        $(this).html(html);
+    }
+
+});
+  
 
   $(".morelink").click(function(){
       if($(this).hasClass("less")) {
@@ -422,3 +438,34 @@ $(document).ready(function(){
     width: "98%"
     }, 2000 );
  });
+
+
+
+ $(document).ready(function(){
+  $("#testimonial-description").owlCarousel({
+      items:1,
+      itemsDesktop:[1000,1],
+      itemsDesktopSmall:[979,1],
+      itemsTablet:[768,1],
+      pagination:true,
+      navigation:false,
+      navigationText:["",""],
+      autoPlay:false,
+      responsiveClass:true,
+      responsive:{
+          0:{
+              items:1,
+              nav:true
+          },
+          600:{
+              items:1,
+              nav:false
+          },
+          1000:{
+              items:1,
+              nav:true,
+              loop:false
+          }
+      }
+    });
+});
