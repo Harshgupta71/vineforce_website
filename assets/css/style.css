@@ -114,6 +114,11 @@ h1, h2, h3, h4, h5, h6 {
     transition-delay: 0 !important;
   }
   #Getintouch {top:0 !important;}
+  .testimonial-card {
+    padding: 50px 50px 100px !important;
+}
+
+
 }
 
 /*--------------------------------------------------------------
@@ -3215,8 +3220,9 @@ list-style: none;
 }
 .morelink {
   display: block;
-  color: #fff;
+  color: #0880e8;
   font-weight: bold;
+  margin-top: 15px;
 }
 .morelink:hover {
   color: #f1a40a;
@@ -3280,4 +3286,51 @@ list-style: none;
 }
 .about p:last-child {
   margin-bottom: 0;
+}
+
+.testimonial-container{
+    margin: 0 auto;
+    max-width: 770px;
+    position: relative;
+}
+.testimonial-card{
+  border-radius: 10px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 50px 80px 0 rgb(48 11 33 / 10%);
+    box-shadow: 0 50px 80px 0 rgb(48 11 33 / 10%);
+    padding: 50px 100px 100px;
+}
+
+.testimonial-container .quote {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+}
+.testimonial-description .single-bio-thumb {
+  border-radius: 50%;
+  background-color: #dfe4ec;
+  -webkit-box-shadow: 0 30px 40px 0 rgb(48 11 33 / 12%);
+  box-shadow: 0 30px 40px 0 rgb(48 11 33 / 12%);
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 30px;
+  overflow: hidden;
+}
+.testimonial-description .testimonial-content p {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+.testimonial-description .bio-info .name {
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+}
+.testimonial-description .bio-info .job {
+  font-size: 14px;
+}
+
+#testimonial .owl-theme .owl-controls {
+  margin-top: 10px;
+  margin-left: 0;
 }
