@@ -3055,7 +3055,7 @@ list-style: none;
  .profile_desc {
   display: flex;
 }
-.pic {
+.profile_desc .pic {
   flex: 1;
 }
 .testimonial-profile {
