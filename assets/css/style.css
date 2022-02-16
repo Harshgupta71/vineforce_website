@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
-#preloader {
+/* #preloader {
   position: fixed;
   top: 0;
   left: 0;
@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 60px;
   -webkit-animation: animate-preloader 1s linear infinite;
   animation: animate-preloader 1s linear infinite;
-}
+} */
 
 @-webkit-keyframes animate-preloader {
   0% {
@@ -764,7 +764,7 @@ section {
 # About Us
 --------------------------------------------------------------*/
 .about {
-  padding: 140px 0;
+
   background: url("../img/about-bg.png") top center no-repeat;
   position: relative;
 }
@@ -3265,9 +3265,6 @@ list-style: none;
   font-style: normal;
   margin: 0 20px 0 0;
 }
- 
-
-
 .about h3 {
   font-weight: 400;
   font-size: 26px;
@@ -3334,3 +3331,136 @@ list-style: none;
   margin-top: 10px;
   margin-left: 0;
 }
+/* Current Openings  */
+.section-title1 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title1 h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+  padding-bottom: 0;
+  color: #054a85;
+}
+
+.jobname{
+  color: #054a85;
+}
+.jobname a:hover{
+  color: #054a85;
+}
+.btncolor{
+  margin-left:15px;
+   background-color: #f1a40a;
+}
+ .jobs{
+background: url("../img/about-bg.png") top center no-repeat;
+
+position: relative;
+}
+.jobs:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.75);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.job-list {
+  border-radius:10px;
+  padding: 15px;
+  display: inline-block;
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  
+}
+.job-list {
+  float: left;
+}
+
+.job-list .job-list-content {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+  margin-top: 10px;
+}
+.job-list .job-list-content a:hover{
+  color: #054a85;
+}
+.job-list .job-list-content h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.job-list .job-list-content p {
+  margin-bottom: 20px;
+}
+.job-list .job-tag {
+  border-top: 1px solid #ddd;
+  padding: 9px 0;
+  line-height: 35px;
+}
+.job-list .job-tag .meta-tag span {
+  font-size: 14px;
+  color: #999;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.job-list .job-tag .meta-tag span a {
+  color: #999;
+}
+.job-list .job-tag .meta-tag span i {
+  margin-right: 5px;
+}
+.job-list .job-tag .icon {
+  float: left;
+  border: 1px solid #ddd;
+  width: 40px;
+  height: 40px;
+  line-height: 42px;
+  border-radius: 50px;
+  text-align: center;
+  margin-right: 18px;
+  background: #f1f1f1;
+  color: #ff4f57;
+  font-size: 16px;
+}
+.job-list .job-tag .pull-right {
+    float: left!important;
+  }
+.job-list .job-tag .pull-right {
+    float: left!important;
+  }
+
+  @media(max-width: 640px){
+  .section-title1 h2 {
+      margin-top:10px;
+    }
+  .job-list{
+    float: none;
+    margin-bottom: 20px;
+  }
+  .job-list .job-list-content {
+    margin-left: 0;
+  }
+  .job-list .job-list-content h4 {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .job-list .job-tag .meta-tag span {
+    font-size: 11px;
+    margin-right: 5px;
+  }
+  .job-list .job-tag .meta-tag {
+    margin-bottom: 10px;
+  }
+  .job-list .job-tag .pull-right {
+    float: left!important;
+  }
+  }
+  
