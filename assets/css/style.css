@@ -1394,6 +1394,7 @@ section {
   padding: 30px;
   border-radius: 10px;
   background: #fff;
+  height: 274px;
 }
 
 .team .member .pic {
@@ -1412,6 +1413,7 @@ section {
 
 .team .member .member-info {
   padding-left: 30px;
+  
 }
 
 .team .member h4 {
